@@ -1,0 +1,38 @@
+/*
+	Import project styles from here
+*/
+
+@import "./fastui.css";
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./Navbar.scss";
+
+.theme {
+	color: $color-theme;
+}
+
+.bg-theme {
+	background: $color-theme;
+}
+
+.theme2 {
+	color: $color-theme2;
+}
+
+.bg-theme2 {
+	background: $color-theme2;
+}
+
+.container {
+	@include flex-row(initial, flex-start);
+    width: 1400px;
+    margin: auto;
+    
+    @include screen-x(1700px) {
+        width: 1000px;
+    }
+
+    @include screen-x(1400px) {
+        width: 90%;
+    }
+}
