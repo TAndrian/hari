@@ -1,0 +1,35 @@
+.cover-quote {
+	text-shadow: 1px 1px 3px black;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		font-size: 6em;
+		line-height: 1;
+		top: -22px;
+		left: 0;
+		content: "\201C";
+		color: $color-theme;
+	}
+
+	&:after {
+		position: absolute;
+		float: right;
+		font-size: 6em;
+		line-height: 1;
+		right: 0;
+		bottom: -55px;
+		content: "\201D";
+		color: $color-theme;
+	}
+
+	footer {
+		padding-top: 10px;
+		text-align: right;
+	}
+	
+	cite:before {
+		content: "\2013";
+		margin-right: 20px;
+	}
+}
