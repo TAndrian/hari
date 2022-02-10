@@ -1,6 +1,7 @@
 import React from "react";
 import CardProfile from "./CardProfile";
 import CoverBottom from "./CoverBottom";
+import CoverQuote from "./CoverQuote";
 
 /*
 	Home cover
@@ -22,8 +23,9 @@ const Cover = () => (
 					backgroundSize: "cover"
 				}}
 			>
-				<div className="w-100 h-70 o-h f-r-be-ce">
+				<div className="w-100 h-80 o-h f-r-be-ce">
 					<CardProfile />
+					<CoverQuote />
 				</div>
 				<CoverBottom />
 			</div>

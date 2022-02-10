@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import CoverQuote from "./CoverQuote";
 import Anime from "animejs";
 
 /*
@@ -53,8 +52,7 @@ const CoverBottom = () => {
 		});
 	}, []);
 	return (
-		<div className="cover-bottom w-100 h-30 f-c-ce-st o-h">
-			<CoverQuote />
+		<div className="cover-bottom w-100 h-20 f-c-ce-st o-h">
 			<div className="cover-bottom__separator bg-white mg-a"></div>
 			<ul className="cover-bottom__social w-100 f-r-ce-ce">
 				{ mappedSocial }
