@@ -1,0 +1,15 @@
+.cover-bottom {
+	&__separator {
+		height: 3px;
+		box-shadow: 1px 1px 4px black;
+	}
+
+	&__social {
+		flex-grow: 1;
+		.link {
+			&:hover {
+				color: $color-theme;
+			}
+		}
+	}
+}
