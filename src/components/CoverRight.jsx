@@ -30,8 +30,13 @@ const CoverRight = () => {
 
 	return (
 		<div className="cover-right h-100 mg-l-20 mg-r-20 o-h f-c-en-be">
-			<div className="cover-right__title-box w-100 f-c-st-st">
-				{ mappedTitle }
+			<div className="cover-right__title-box w-100 f-c-ce-ce">
+				<div className="cover-right__title-list w-100">
+					{ mappedTitle }
+				</div>
+				<a className="cover-right__link br-10 theme tr-200 fs-120 pd-10 pd-l-20 pd-r-20 b" href="#0">
+					Discover magic
+				</a>
 			</div>
 			<CoverQuote />
 		</div>

@@ -2,9 +2,13 @@
 	flex: 1;
 	height: calc(100% - 40px);
 
+	@include screen-x(900px) {
+		display: none;
+	}
+
 	&__title-box {
 		flex-grow: 1;
-		position: relative;
+		// box-shadow: 0px 0px 10px red inset;
 	}
 
 	&__title {
@@ -14,6 +18,29 @@
 		opacity: 0;
 		&--shown {
 			opacity: 1;
+		}
+		@include screen-x(1700px) {
+			font-size: 4em;
+		}
+		@include screen-x(1000px) {
+			font-size: 3.5em;
+		}
+	}
+
+	&__title-list {
+		height: 300px;
+		position: relative;
+		// box-shadow: 0px 0px 10px black;
+	}
+
+	&__link {
+		border: 3px $color-theme solid;
+		box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+		@include screen-x(1100px) {
+			display: none;
+		}
+		@include screen-y(800px) {
+			display: none;
 		}
 	}
 }

@@ -19,7 +19,7 @@ const CardProfile = () => {
 				As a passionate and experienced Javascript developer, I enjoy building beautiful pixel perfect apps.
 			</p>
 			<div className="f-r-be-ce">
-				<p className="white pd-10 pd-l-20 pd-r-20">
+				<p className="card-profile__company-label white pd-10 pd-l-20 pd-r-20">
 					<Icon icon={ ["fas", "laptop"] } /> Company:
 				</p>
 				<a

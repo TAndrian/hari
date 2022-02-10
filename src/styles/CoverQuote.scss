@@ -2,6 +2,10 @@
 	text-shadow: 1px 1px 3px black;
 	position: relative;
 
+	@include screen-x(1024px) {
+		width: calc(100% - 80px);
+	}
+
 	&:before {
 		position: absolute;
 		font-size: 6em;
@@ -30,6 +34,6 @@
 	
 	cite:before {
 		content: "\2013";
-		margin-right: 20px;
+		margin-right: 10px;
 	}
 }
