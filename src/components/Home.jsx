@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Page from "./Page";
+import Cover from "./Cover";
 
 /*
 	Home page
@@ -8,7 +10,10 @@ import Navbar from "./Navbar";
 const Home = () => (
 	<>
 		<Navbar />
-		<h1>Hello from portfolio v3 !</h1>
+		<Page>
+			<Cover />
+			<h1>Hello from portfolio v3 !</h1>
+		</Page>
 	</>
 );
 
