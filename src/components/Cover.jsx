@@ -1,4 +1,5 @@
 import React from "react";
+import CardProfile from "./CardProfile";
 import CoverBottom from "./CoverBottom";
 
 /*
@@ -9,7 +10,7 @@ const Cover = () => (
 	<div
 		className="cover w-100 h-100 o-h"
 		style={{
-			background: "url(/backgrounds/0.jpg) center center no-repeat",
+			background: "url(/assets/backgrounds/0.jpg) center center no-repeat",
 			backgroundSize: "cover"
 		}}
 	>
@@ -17,11 +18,12 @@ const Cover = () => (
 			<div
 				className="w-100 h-100 f-c-st-st"
 				style={{
-					background: "url(/cover/1.jpg) center center no-repeat",
+					background: "url(/assets/cover/1.jpg) center center no-repeat",
 					backgroundSize: "cover"
 				}}
 			>
-				<div className="w-100 h-70 o-h">
+				<div className="w-100 h-70 o-h f-r-be-ce">
+					<CardProfile />
 				</div>
 				<CoverBottom />
 			</div>
