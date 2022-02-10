@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import CoverQuote from "./CoverQuote";
+import Anime from "animejs";
 
 /*
 	Bottom part of home cover
@@ -42,14 +43,24 @@ const mappedSocial = socialList.map(({ link, title, icon}) => (
 	</li>
 ));
 
-const CoverBottom = () => (
-	<div className="cover-bottom w-100 h-30 f-c-ce-st o-h">
-		<CoverQuote />
-		<div className="cover-bottom__separator w-60 bg-white"></div>
-		<ul className="cover-bottom__social w-100 f-r-ce-ce">
-			{ mappedSocial }
-		</ul>
-	</div>
-);
+const CoverBottom = () => {
+	useEffect(() => {
+		Anime({
+			targets: ".cover-bottom__separator",
+			width: "60%",
+			easing: "spring(1, 80, 5, 0)",
+			delay: 2000
+		});
+	}, []);
+	return (
+		<div className="cover-bottom w-100 h-30 f-c-ce-st o-h">
+			<CoverQuote />
+			<div className="cover-bottom__separator bg-white mg-a"></div>
+			<ul className="cover-bottom__social w-100 f-r-ce-ce">
+				{ mappedSocial }
+			</ul>
+		</div>
+	);
+}
 
 export default CoverBottom;
