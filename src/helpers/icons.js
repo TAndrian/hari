@@ -7,7 +7,8 @@ import {
 	faSkype
 } from "@fortawesome/free-brands-svg-icons";
 import {
-	faEnvelope
+	faEnvelope,
+	faLaptop
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -21,5 +22,6 @@ library.add(
 	faGithub,
 	faLinkedin,
 	faSkype,
-	faEnvelope
+	faEnvelope,
+	faLaptop
 );

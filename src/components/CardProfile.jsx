@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 
 const CardProfile = () => {
 	return (
@@ -17,7 +18,18 @@ const CardProfile = () => {
 			<p className="card-profile__description white tx-j pd-20 pd-b-0 pd-t-10 p-n n-s">
 				As a passionate and experienced Javascript developer, I enjoy building beautiful pixel perfect apps.
 			</p>
-			<p className="u white">Current company</p>
+			<div className="f-r-be-ce">
+				<p className="white pd-10 pd-l-20 pd-r-20">
+					<Icon icon={ ["fas", "laptop"] } /> Company:
+				</p>
+				<a
+					className="card-profile__link pd-5 br-5 mg-r-20 bg-theme tr-200 f-r-ce-ce fs-80"
+					title="Site de Publicis Sapient France"
+					href="#0"
+				>
+					Publicis Sapient France
+				</a>
+			</div>
 		</article>
 	);
 };
