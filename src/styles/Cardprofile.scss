@@ -1,0 +1,53 @@
+.card-profile {
+	width: 350px;
+	height: calc(100% - 40px);
+	max-height: 390px;
+	background: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+	$card-figure-size: 200px;
+
+	&__figure {
+		width: $card-figure-size;
+		height: $card-figure-size;
+		box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.8);
+		transform: rotate(10deg);
+		animation: oscillation infinite 3.1s ease-in-out;
+		margin-top: 20px;
+		// Image oscillation animation
+		@keyframes oscillation {
+			0% {
+				transform: rotate(10deg);
+				transform-origin: 30px 30px;
+			}
+			50% {
+				transform: rotate(17deg);
+				transform-origin: 30px 30px;
+			}
+			100% {
+				transform: rotate(10deg);
+				transform-origin: 30px 30px;
+			}
+		}
+	}
+
+	&__image {
+		width: calc($card-figure-size - 10px);
+		height: calc($card-figure-size - 10px);
+	}
+
+	&__name {
+		text-shadow: 1px 1px 3px black;
+	}
+
+	&__separator {
+		width: calc(100% - 40px);
+		height: 1px;
+		background: rgb(60, 60, 60);
+	}
+
+	&__description {
+		text-shadow: 1px 1px 3px black;
+		color: rgb(200, 200, 200);
+	}
+}
