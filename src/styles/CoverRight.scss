@@ -1,0 +1,19 @@
+.cover-right {
+	flex: 1;
+	height: calc(100% - 40px);
+
+	&__title-box {
+		flex-grow: 1;
+		position: relative;
+	}
+
+	&__title {
+		text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		&--shown {
+			opacity: 1;
+		}
+	}
+}
