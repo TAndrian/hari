@@ -1,0 +1,33 @@
+.journey-line {
+	position: relative;
+
+	.line {
+		width: 6px;
+		position: relative;
+	}
+
+	.start,
+	.end {
+		position: absolute;
+		margin: auto;
+		left: -7px;
+	}
+
+	.start {
+		top: 0;
+	}
+
+	.end {
+		bottom: 0;
+	}
+
+	.icon {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -27px;
+		right: 0;
+		margin: auto;
+		color: white;
+	}
+}
