@@ -6,6 +6,7 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 */
 
 const JourneyCard = ({
+	image,
 	establishment,
 	location,
 	about,
@@ -18,7 +19,7 @@ const JourneyCard = ({
 		<article className="journey-card o-h br-10 tr-200 bg-white f-r-st-ce">
 			<div className="journey-card__representation w-270px h-100 o-h">
 				<figure className="w-100 h-100 o-h">
-					<img className="w-100 h-100" src="/assets/journey/Lycée Andre Resampa Antsirabe.jpg" alt="Lycée André Resampa Antsirabe" />
+					<img className="w-100 h-100" src={ image } alt={ establishment } />
 				</figure>
 				<div className="journey-card__establishment p-n n-s tr-200">
 					<div className="">

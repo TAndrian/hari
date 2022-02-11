@@ -1,0 +1,6 @@
+.journey-item {
+	&--reversed {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
