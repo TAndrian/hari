@@ -1,5 +1,5 @@
 import React from "react";
-import CardProfile from "./CardProfile";
+import ProfileCard from "./ProfileCard";
 import CoverBottom from "./CoverBottom";
 import CoverQuote from "./CoverQuote";
 import CoverRight from "./CoverRight";
@@ -25,7 +25,7 @@ const Cover = () => (
 				}}
 			>
 				<div className="w-100 h-80 o-h f-r-be-ce">
-					<CardProfile />
+					<ProfileCard />
 					<CoverRight />
 				</div>
 				<CoverBottom />
