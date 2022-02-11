@@ -8,7 +8,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
 	faEnvelope,
-	faLaptop
+	faLaptop,
+	faMapMarkerAlt,
+	faCalendarAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -23,5 +25,7 @@ library.add(
 	faLinkedin,
 	faSkype,
 	faEnvelope,
-	faLaptop
+	faLaptop,
+	faMapMarkerAlt,
+	faCalendarAlt
 );
