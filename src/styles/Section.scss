@@ -1,0 +1,23 @@
+.section {
+	padding-top: 76px;
+
+	&__container {
+		flex-direction: column;
+	}
+
+	&__separator {
+		border-radius: 3px;
+	}
+
+	&__cube {
+		animation: 2s rotation linear infinite;
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
