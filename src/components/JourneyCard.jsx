@@ -19,7 +19,7 @@ const JourneyCard = ({
 		<article className="journey-card o-h br-10 tr-200 bg-white f-r-st-ce">
 			<div className="journey-card__representation w-270px h-100 o-h">
 				<figure className="w-100 h-100 o-h">
-					<img className="w-100 h-100" src={ image } alt={ establishment } />
+					<img className="w-100 h-100 n-s p-n" src={ image } alt={ establishment } />
 				</figure>
 				<div className="journey-card__establishment p-n n-s tr-200">
 					<div className="">
@@ -35,14 +35,12 @@ const JourneyCard = ({
 				</div>
 			</div>
 			<div className="journey-card__about h-100 p-n n-s">
-				<div className="f-r-be-ce">
-					<h4 className="pd-10 fs-140">{ position }</h4>
-					<p className="journey-card__years mg-r-10">{ duration }</p>
-				</div>
+				<h4 className="pd-10 fs-120">{ position }</h4>
 				<div className="journey-card__separator mg-l-10 mg-r-10"></div>
 				<p className="tx-j pd-10 fs-90">
 					{ children || "" }
 				</p>
+				<p className="journey-card__years mg-r-10 tx-r"><Icon icon={ ["fas", "clock"] } /> { duration }</p>
 			</div>
 		</article>
 	);

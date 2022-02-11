@@ -11,7 +11,12 @@ import {
 	faLaptop,
 	faMapMarkerAlt,
 	faCalendarAlt,
-	faGraduationCap
+	faGraduationCap,
+	faPencilAlt,
+	faClock,
+	faPalette,
+	faWrench,
+	faRuler
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -29,5 +34,10 @@ library.add(
 	faLaptop,
 	faMapMarkerAlt,
 	faCalendarAlt,
-	faGraduationCap
+	faGraduationCap,
+	faPencilAlt,
+	faClock,
+	faPalette,
+	faWrench,
+	faRuler
 );

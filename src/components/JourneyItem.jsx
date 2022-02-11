@@ -27,7 +27,7 @@ const JourneyItem = ({
 				{ journey.description }
 			</JourneyCard>
 			<JourneyLine start={ start } end={ end } icon={ journey.icon }/>
-			<figure className="w-200px h-200px">
+			<figure className="w-200px h-200px n-s br-10 o-h">
 				<img className="w-100 h-100" src={ journey.lottie } alt="Lottie" />
 			</figure>
 		</section>
