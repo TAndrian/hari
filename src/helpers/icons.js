@@ -10,7 +10,8 @@ import {
 	faEnvelope,
 	faLaptop,
 	faMapMarkerAlt,
-	faCalendarAlt
+	faCalendarAlt,
+	faGraduationCap
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -27,5 +28,6 @@ library.add(
 	faEnvelope,
 	faLaptop,
 	faMapMarkerAlt,
-	faCalendarAlt
+	faCalendarAlt,
+	faGraduationCap
 );
