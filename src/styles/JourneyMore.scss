@@ -1,0 +1,17 @@
+.journey-more {
+	&__button {
+		border: none;
+		color: white;
+		&:hover {
+			background: lighten($color-theme, 10%);
+		}
+		&:active {
+			background: darken($color-theme, 10%);
+		}
+	}
+
+	.line {
+		width: 6px;
+		height: 20px;
+	}
+}

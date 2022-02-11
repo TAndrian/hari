@@ -16,7 +16,8 @@ import {
 	faClock,
 	faPalette,
 	faWrench,
-	faRuler
+	faRuler,
+	faPlusCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -39,5 +40,6 @@ library.add(
 	faClock,
 	faPalette,
 	faWrench,
-	faRuler
+	faRuler,
+	faPlusCircle
 );

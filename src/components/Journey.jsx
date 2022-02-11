@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import JourneyItem from "./JourneyItem";
+import JourneyMore from "./JourneyMore";
 
 /*
 	Journey timeline
@@ -81,19 +82,24 @@ const journeyList = [
 	}
 ];
 
-const mappedJourney = journeyList.map((journey, key) => (
-	<JourneyItem
-		start={ key === 0 }
-		end={ key === journeyList.length - 1 }
-		reversed={ key % 2 === 0 }
-		journey={ journey } key={ uuidv4() }
-	/>
-));
-
 const Journey = () => {
+	const [allVisible, setAllVisible] = useState(false);
+	// const toDisplay = allVisible ? journeyList : journeyList.filter((journey, key) => key < 3);
+
+	const mappedJourney = journeyList.map((journey, key) => (
+		<JourneyItem
+			className={ allVisible ? "" : (key >= 3 ? "journey-item--invisible" : "") }
+			start={ key === 0 }
+			end={ key === journeyList.length - 1 }
+			reversed={ key % 2 === 0 }
+			journey={ journey } key={ uuidv4() }
+		/>
+	));
+
 	return (
 		<div className="f-c-st-st">
 			{ mappedJourney }
+			<JourneyMore atClick={ () => setAllVisible(true) }/>
 		</div>
 	);
 };

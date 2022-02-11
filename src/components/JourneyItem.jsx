@@ -7,6 +7,7 @@ import JourneyLine from "./JourneyLine";
 */
 
 const JourneyItem = ({
+	className,
 	start,
 	end,
 	reversed,
@@ -14,7 +15,10 @@ const JourneyItem = ({
 	key
 }) => {
 	return (
-		<section className={ `journey-item ${reversed ? "journey-item--reversed" : ""} f-r-st-ce` } key={ key }>
+		<section
+			className={ `journey-item ${reversed ? "journey-item--reversed" : ""} ${className ? className : ""} f-r-st-ce` }
+			key={ key }
+		>
 			<JourneyCard
 				image={ journey.image }
 				establishment={ journey.establishment }
