@@ -1,0 +1,38 @@
+.journey-card {
+	width: 50%;
+	height: 270px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+	&:hover {
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	}
+
+	&__about {
+		flex: 1;
+	}
+
+	&__separator {
+		width: calc(100% - 20px);
+		height: 1px;
+		background: rgb(200, 200, 200);
+	}
+
+	&__years {
+		color: rgb(180, 180, 180);
+	}
+	
+	&__establishment {
+		position: absolute;
+		bottom: -100%;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	&__representation {
+		position: relative;
+		&:hover {
+			.journey-card__establishment {
+				bottom: 0;
+			}
+		}
+	}
+}
