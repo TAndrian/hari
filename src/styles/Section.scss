@@ -20,4 +20,16 @@
 			}
 		}
 	}
+
+	.title {
+		@include screen-x(900px) {
+			font-size: 1.5em;
+		}
+	}
+
+	.subtitle {
+		@include screen-x(900px) {
+			font-size: 3.5em;
+		}
+	}
 }

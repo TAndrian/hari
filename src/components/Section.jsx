@@ -11,9 +11,9 @@ const Section = ({
 		<div className="container section__container">
 			<div className="f-r-st-ce p-n n-s">
 				<div className="section__cube bg-theme w-20px h-20px mg-r-10"></div>
-				<h2 className="theme fs-200">{ title || "Title" }</h2>
+				<h2 className="title theme fs-200">{ title || "Title" }</h2>
 			</div>
-			<h3 className="fs-430 p-n n-s">{ subtitle || "This is a subtitle" }</h3>
+			<h3 className="subtitle fs-430 p-n n-s">{ subtitle || "This is a subtitle" }</h3>
 			<div className="section__separator bg-theme w-40 h-5px mg-t-10"></div>
 			<p className="tx-j pd-t-20 pd-b-20 p-n n-s">
 				{ children ? children : "" }
