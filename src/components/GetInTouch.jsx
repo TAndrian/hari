@@ -1,7 +1,7 @@
 import React from "react";
 import SendMessage from "./SendMessage";
 import Contacts from "./Contacts";
-import Games from "./Games";
+import Meet from "./Meet";
 
 const GetInTouch = () => (
 	<section id="get-in-touch" className="get-in-touch bg-white">
@@ -13,8 +13,8 @@ const GetInTouch = () => (
 				<div className="box reach">
 					<Contacts />
 				</div>
-				<div className="box gaming">
-					<Games />
+				<div className="box meet">
+					<Meet />
 				</div>
 			</div>
 		</div>
