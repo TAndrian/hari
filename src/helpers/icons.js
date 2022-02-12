@@ -20,7 +20,8 @@ import {
 	faPlusCircle,
 	faPhone,
 	faGlobe,
-	faDownload
+	faDownload,
+	faCoffee
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -47,5 +48,6 @@ library.add(
 	faPlusCircle,
 	faPhone,
 	faGlobe,
-	faDownload
+	faDownload,
+	faCoffee
 );
