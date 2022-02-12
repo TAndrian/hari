@@ -51,7 +51,7 @@ const Navbar = () => {
 						alt="Logo"
 						width={ 60 }
 						height={ 60 }
-						src="/heart.png"
+						src="/assets/heart.png"
 					/>
 					<div className="title">
 						<h1 className="fs-250 n-s p-n">
