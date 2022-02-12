@@ -18,8 +18,6 @@ const Meet = () => (
 			<Image
 				alt="Meet me !"
 				src="/assets/backgrounds/meet.jpg"
-				width={ 318 }
-				height={ 267 }
 			/>
 			<MovingClouds />
 			<div className="meet__content f-c-ce-ce w-100 h-100">

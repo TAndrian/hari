@@ -20,6 +20,7 @@ const JourneyCard = ({
 		<article className="journey-card o-h br-10 tr-200 bg-white f-r-st-ce">
 			<div className="journey-card__representation w-270px h-100 o-h">
 				<Image
+					className="journey-card__image"
 					alt={ establishment }
 					width={ 270 }
 					height={ 270 }

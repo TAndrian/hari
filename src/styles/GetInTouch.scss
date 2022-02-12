@@ -2,7 +2,7 @@
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 
 	.box {
-		width: calc(100% / 3);
+		// width: calc(100% / 3);
 		min-height: 380px;
 	}
 
@@ -11,7 +11,9 @@
 	}
 
 	.msg {
-		@include screen-x(900px) {
+		flex: 1;
+		@include screen-x(1200px) {
+			min-width: 100%;
 			width: 100%;
 			min-height: auto;
 			height: auto;
@@ -19,10 +21,11 @@
 	}
 
 	.reach {
-		@include screen-x(900px) {
+		width: calc(100% / 3);
+		@include screen-x(1200px) {
 			flex: 1;
 		}
-		@include screen-x(700px) {
+		@include screen-x(800px) {
 			width: 100%;
 			min-height: auto;
 			height: auto;
@@ -30,7 +33,12 @@
 		}
 	}
 
-	.meet {
-		flex: 1;
+	.lets-meet {
+		@include screen-x(1200px) {
+			width: auto;
+		}
+		@include screen-x(800px) {
+			width: 100%;
+		}
 	}
 }
