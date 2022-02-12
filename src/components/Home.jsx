@@ -16,7 +16,7 @@ const Home = () => (
 		<Cover />
 		<Section
 			id="journey"
-			title="A passionnate developer"
+			title="Once upon a time..."
 			subtitle="Let me tell a story"
 		>
 			<Fragment>
