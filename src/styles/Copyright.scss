@@ -1,6 +1,10 @@
 .copyright {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 
+	@include screen-x(500px) {
+		flex-direction: column;
+	}
+
 	.link {
 		&:hover {
 			color: lighten($color-theme, 20%);
@@ -13,5 +17,14 @@
 	.left,
 	.right {
 		text-shadow: 1px 1px 3px black;
+		@include screen-x(500px) {
+			padding: 0;
+		}
+	}
+
+	.left {
+		@include screen-x(500px) {
+			padding-bottom: 10px;
+		}
 	}
 }
