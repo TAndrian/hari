@@ -49,4 +49,14 @@
 			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 		}
 	}
+
+	.title {
+		position: relative;
+		&-shadow {
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			color: rgb(20, 20, 20);
+		}
+	}
 }

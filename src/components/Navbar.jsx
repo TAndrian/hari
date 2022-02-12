@@ -53,10 +53,15 @@ const Navbar = () => {
 						height={ 60 }
 						src="/heart.png"
 					/>
-					<h1 className="fs-250 n-s p-n">
-						{mappedChars}
-					</h1>
-					<div className={`${cube} w-10px h-10px`}></div>
+					<div className="title">
+						<h1 className="fs-250 n-s p-n">
+							{ mappedChars }
+						</h1>
+						<h2 className="title-shadow fs-250 n-s p-n">
+							{ title }
+						</h2>
+					</div>
+					<div className={ `${cube} w-10px h-10px` }></div>
 				</div>
 			</div>
 		</nav>
