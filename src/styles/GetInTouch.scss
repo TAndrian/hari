@@ -5,4 +5,29 @@
 		width: calc(100% / 3);
 		min-height: 380px;
 	}
+
+	.list {
+		flex-wrap: wrap;
+	}
+
+	.msg {
+		@include screen-x(900px) {
+			width: 100%;
+			min-height: auto;
+			height: auto;
+		}
+	}
+
+	.reach,
+	.gaming {
+		@include screen-x(900px) {
+			width: 50%;
+		}
+		@include screen-x(700px) {
+			width: 100%;
+			min-height: auto;
+			height: auto;
+			margin-bottom: 20px;
+		}
+	}
 }

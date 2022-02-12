@@ -6,14 +6,14 @@ import Games from "./Games";
 const GetInTouch = () => (
 	<section id="get-in-touch" className="get-in-touch bg-white">
 		<div className="container">
-			<div className="f-r-ce-ce w-100">
-				<div className="box">
+			<div className="list f-r-ce-ce w-100">
+				<div className="box msg">
 					<SendMessage />
 				</div>
-				<div className="box">
+				<div className="box reach">
 					<Contacts />
 				</div>
-				<div className="box">
+				<div className="box gaming">
 					<Games />
 				</div>
 			</div>
