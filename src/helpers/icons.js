@@ -17,7 +17,10 @@ import {
 	faPalette,
 	faWrench,
 	faRuler,
-	faPlusCircle
+	faPlusCircle,
+	faPhone,
+	faGlobe,
+	faDownload
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -41,5 +44,8 @@ library.add(
 	faPalette,
 	faWrench,
 	faRuler,
-	faPlusCircle
+	faPlusCircle,
+	faPhone,
+	faGlobe,
+	faDownload
 );

@@ -5,6 +5,7 @@ import Cover from "./Cover";
 import Section from "./Section";
 import Journey from "./Journey";
 import Copyright from "./Copyright";
+import GetInTouch from "./GetInTouch";
 
 /*
 	Home page
@@ -28,6 +29,7 @@ const Home = () => (
 				<div className="container">
 					<Journey />
 				</div>
+				<GetInTouch />
 				<Copyright />
 			</Fragment>
 		</Page>
