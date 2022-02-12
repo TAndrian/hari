@@ -46,7 +46,8 @@ const Navbar = () => {
 			<div className="container">
 				<div className="f-r-st-st">
 					<Image
-						className="logo mg-r-20 br-50 o-h f-r-ce-ce n-s"
+						className="logo mg-r-20 br-50 o-h n-s"
+						style={{ background: "rgb(20, 20, 20)" }}
 						alt="Logo"
 						width={ 60 }
 						height={ 60 }

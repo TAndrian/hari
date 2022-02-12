@@ -5,7 +5,14 @@ import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 const ProfileCard = () => (
 	<article className="card-profile br-10 mg-l-20 o-h">
 		<Image
-			className="card-profile__figure mg-a o-h bg-white br-5 f-r-ce-ce n-s"
+			className="card-profile__figure o-h br-5 f-r-ce-ce n-s"
+			style={{
+				background: "rgb(20, 20, 20)",
+				margin: "auto",
+				marginTop: "20px",
+				display: "flex",
+				justifyContent: "center"
+			}}
 			alt="Harijaona RAJAONSON"
 			src="/assets/Harijaona RAJAONSON.jpg"
 		/>
