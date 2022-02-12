@@ -6,5 +6,9 @@
 	&__container {
 		background: rgb(30, 30, 30);
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		
+		@include screen-x(900px) {
+			width: 100%;
+		}
 	}
 }
