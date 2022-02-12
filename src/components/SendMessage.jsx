@@ -4,7 +4,7 @@ import GetInTouchTitle from "./GetInTouchTitle";
 const SendMessage = () => {
 	return (
 		<Fragment>
-			<GetInTouchTitle title="Leave a message"/>
+			<GetInTouchTitle title="Leave a message" icon={ ["fas", "envelope"] } />
 			<form className="send-message f-c-ce-st" onSubmit={ () => console.log("Submit !") }>
 				<input
 					className="input br-5 pd-10 pd-l-20 pd-r-20"
