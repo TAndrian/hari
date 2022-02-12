@@ -1,22 +1,38 @@
 .games {
-	width: 100%;
 	height: calc(380px - 20px);
 
 	.display {
-		flex-grow: 1;
-		width: calc(100% - 40px);
+		width: 318px;
+		height: 267px;
 		background: rgb(240, 240, 240);
 	}
 
 	.checkout {
 		border: 3px $color-theme solid;
 		background: transparent;
+		box-shadow: 3px 3px 8px black;
+		text-shadow: 1px 1px 2px black;
+		background: rgba(0, 0, 0, 0.7);
 		&:hover {
 			border: 3px white solid;
 			color: white;
 		}
 		&:active {
 			font-weight: bold;
+		}
+	}
+
+	&__box {
+		position: relative;
+	}
+
+	&__content {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		.text {
+			text-shadow: 1px 1px 2px black;
+			background: rgba(0, 0, 0, 0.7);
 		}
 	}
 }
