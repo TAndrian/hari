@@ -97,7 +97,7 @@ const Journey = () => {
 	));
 
 	return (
-		<div className="f-c-st-st">
+		<div className="journey f-c-st-st">
 			{ mappedJourney }
 			<JourneyMore atClick={ () => setAllVisible(true) }/>
 		</div>

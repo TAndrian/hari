@@ -1,4 +1,19 @@
 .journey-more {
+	@include screen-x(1200px) {
+		width: calc(200px + 170px + 116px);
+	}
+
+	@include screen-x(900px) {
+		width: auto;
+		position: relative;
+		left: -14px;
+	}
+
+	@include screen-x(700px) {
+		position: initial;
+		width: 100%;
+	}
+
 	&__button {
 		border: none;
 		color: white;
@@ -13,5 +28,8 @@
 	.line {
 		width: 6px;
 		height: 20px;
+		@include screen-x(700px) {
+			display: none;
+		}
 	}
 }

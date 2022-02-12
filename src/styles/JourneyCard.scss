@@ -3,6 +3,19 @@
 	height: 270px;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 
+	@include screen-x(1200px) {
+		flex: 1;
+		width: auto;
+	}
+
+	@include screen-x(600px) {
+		flex-direction: column;
+		width: 270px;
+		height: auto;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+
 	&:hover {
 		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 	}
@@ -17,8 +30,28 @@
 		background: rgb(200, 200, 200);
 	}
 
-	&__years {
+	&__years,
+	&__years2 {
 		color: rgb(180, 180, 180);
+	}
+
+	&__years {
+		@include screen-x(1200px) {
+			display: none;
+		}
+		@include screen-x(650px) {
+			display: block;
+		}
+	}
+
+	&__years2 {
+		display: none;
+		@include screen-x(1200px) {
+			display: block;
+		}
+		@include screen-x(650px) {
+			display: none;
+		}
 	}
 	
 	&__establishment {

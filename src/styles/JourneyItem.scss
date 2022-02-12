@@ -1,9 +1,28 @@
 .journey-item {
+	@include screen-x(1200px) {
+		flex-direction: row-reverse;
+		justify-content: start;
+	}
+
+	@include screen-x(700px) {
+		flex-direction: column;
+	}
+
 	&--reversed {
 		display: flex;
 		flex-direction: row-reverse;
+		@include screen-x(700px) {
+			flex-direction: column;
+		}
 	}
+
 	&--invisible {
 		display: none;
+	}
+
+	&__lottie {
+		@include screen-x(900px) {
+			display: none;
+		}
 	}
 }
