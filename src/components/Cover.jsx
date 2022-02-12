@@ -10,7 +10,7 @@ import CoverRight from "./CoverRight";
 
 const Cover = () => (
 	<div
-		className="cover w-100 h-100 o-h"
+		className="cover w-100 o-h"
 		style={{
 			background: "url(/assets/backgrounds/0.jpg) center center no-repeat",
 			backgroundSize: "cover"

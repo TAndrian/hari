@@ -3,7 +3,7 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 
 const ProfileCard = () => (
 	<article className="card-profile br-10 mg-l-20 o-h">
-		<figure className="card-profile__figure mg-a o-h bg-white br-5 f-r-ce-ce">
+		<figure className="card-profile__figure mg-a o-h bg-white br-5 f-r-ce-ce n-s">
 			<img
 				className="card-profile__image"
 				src="/assets/Harijaona RAJAONSON.jpg"
@@ -18,7 +18,7 @@ const ProfileCard = () => (
 			As a passionate and experienced Javascript developer, I enjoy building beautiful pixel perfect apps.
 		</p>
 		<div className="f-r-be-ce">
-			<p className="card-profile__company-label white pd-10 pd-l-20 pd-r-20">
+			<p className="card-profile__company-label white pd-10 pd-l-20 pd-r-20 n-s">
 				<Icon icon={ ["fas", "laptop"] } /> Company:
 			</p>
 			<a
