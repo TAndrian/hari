@@ -1,0 +1,22 @@
+.games {
+	width: 100%;
+	height: calc(380px - 20px);
+
+	.display {
+		flex-grow: 1;
+		width: calc(100% - 40px);
+		background: rgb(240, 240, 240);
+	}
+
+	.checkout {
+		border: 3px $color-theme solid;
+		background: transparent;
+		&:hover {
+			border: 3px white solid;
+			color: white;
+		}
+		&:active {
+			font-weight: bold;
+		}
+	}
+}

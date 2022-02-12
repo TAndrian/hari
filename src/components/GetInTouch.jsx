@@ -1,6 +1,7 @@
 import React from "react";
 import SendMessage from "./SendMessage";
 import Contacts from "./Contacts";
+import Games from "./Games";
 
 const GetInTouch = () => (
 	<section id="get-in-touch" className="get-in-touch bg-white">
@@ -13,8 +14,7 @@ const GetInTouch = () => (
 					<Contacts />
 				</div>
 				<div className="box">
-					<h2 className="theme pd-20">External links</h2>
-					<div className="separator mg-l-20"></div>
+					<Games />
 				</div>
 			</div>
 		</div>
