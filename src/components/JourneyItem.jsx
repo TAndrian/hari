@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 import JourneyCard from "./JourneyCard";
 import JourneyLine from "./JourneyLine";
 
@@ -27,9 +28,13 @@ const JourneyItem = ({
 				{ journey.description }
 			</JourneyCard>
 			<JourneyLine start={ start } end={ end } icon={ journey.icon }/>
-			<figure className="journey-item__lottie w-200px h-200px n-s br-10 o-h">
-				<img className="w-100 h-100" src={ journey.lottie } alt="Lottie" />
-			</figure>
+			<Image
+				className="journey-item__lottie w-200px h-200px n-s br-10 o-h"
+				alt={ journey.image }
+				width={ 200 }
+				height={ 200 }
+				src={ journey.lottie }
+			/>
 		</section>
 	);
 };

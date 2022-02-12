@@ -1,12 +1,6 @@
 .meet {
 	height: calc(380px - 20px);
 
-	.display {
-		width: 318px;
-		height: 267px;
-		background: rgb(240, 240, 240);
-	}
-
 	.checkout {
 		border: 3px $color-theme solid;
 		background: transparent;
@@ -24,6 +18,9 @@
 
 	&__box {
 		position: relative;
+		width: 318px;
+		height: 267px;
+		background: rgb(240, 240, 240);
 	}
 
 	&__content {

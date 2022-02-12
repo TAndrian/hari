@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 
 /*
 	Card that displays journey item content
@@ -18,9 +19,12 @@ const JourneyCard = ({
 	return (
 		<article className="journey-card o-h br-10 tr-200 bg-white f-r-st-ce">
 			<div className="journey-card__representation w-270px h-100 o-h">
-				<figure className="w-100 h-100 o-h">
-					<img className="w-100 h-100 n-s p-n" src={ image } alt={ establishment } />
-				</figure>
+				<Image
+					alt={ establishment }
+					width={ 270 }
+					height={ 270 }
+					src={ image }
+				/>
 				<div className="journey-card__establishment p-n n-s tr-200">
 					<h5 className="pd-10 white fs-100">{ establishment }</h5>
 					<p className="pd-l-10 pd-r-10 theme b fs-90"><Icon icon={ ["fas", "map-marker-alt"] } /> { location }</p>

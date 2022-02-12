@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 
 /*
 	Navigation bar
@@ -44,9 +45,13 @@ const Navbar = () => {
 		<nav className="navbar w-100 bg-theme2 f-r-ce-ce">
 			<div className="container">
 				<div className="f-r-st-st">
-					<figure className="logo w-60px h-60px mg-r-20 br-50 o-h f-r-ce-ce n-s">
-						<img className="w-100 h-100" src="heart.png" alt="Logo" />
-					</figure>
+					<Image
+						className="logo mg-r-20 br-50 o-h f-r-ce-ce n-s"
+						alt="Logo"
+						width={ 60 }
+						height={ 60 }
+						src="/heart.png"
+					/>
 					<h1 className="fs-250 n-s p-n">
 						{mappedChars}
 					</h1>

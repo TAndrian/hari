@@ -1,15 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 
 const ProfileCard = () => (
 	<article className="card-profile br-10 mg-l-20 o-h">
-		<figure className="card-profile__figure mg-a o-h bg-white br-5 f-r-ce-ce n-s">
-			<img
-				className="card-profile__image"
-				src="/assets/Harijaona RAJAONSON.jpg"
-				alt="Harijaona RAJAONSON"
-			/>
-		</figure>
+		<Image
+			className="card-profile__figure mg-a o-h bg-white br-5 f-r-ce-ce n-s"
+			alt="Harijaona RAJAONSON"
+			src="/assets/Harijaona RAJAONSON.jpg"
+		/>
 		<h2 className="card-profile__name white pd-20 pd-t-40 pd-b-10">
 			Harijaona RAJAONSON
 		</h2>

@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 import ProfileCard from "./ProfileCard";
 import CoverBottom from "./CoverBottom";
 import CoverQuote from "./CoverQuote";
@@ -9,13 +10,12 @@ import CoverRight from "./CoverRight";
 */
 
 const Cover = () => (
-	<div
-		className="cover w-100 o-h"
-		style={{
-			background: "url(/assets/backgrounds/0.jpg) center center no-repeat",
-			backgroundSize: "cover"
-		}}
-	>
+	<div className="cover w-100 o-h">
+		<Image
+			className="w-100 h-100"
+			alt="Background"
+			src="/assets/backgrounds/0.jpg"
+		/>
 		<div className="container cover__container h-100">
 			<div
 				className="w-100 h-100 f-c-st-st"
