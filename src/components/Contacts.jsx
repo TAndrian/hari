@@ -31,7 +31,7 @@ const mappedContacts = contactList.map((contact) => (
 const Contacts = () => {
 	return (
 		<div className="contacts">
-			<GetInTouchTitle title="Reach me"/>
+			<GetInTouchTitle title="Reach me" icon={ ["fas", "laptop"] } />
 			<ul className="pd-20 pd-b-0">
 				{ mappedContacts }
 			</ul>
