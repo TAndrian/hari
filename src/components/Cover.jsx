@@ -14,13 +14,13 @@ const Cover = () => (
 		<Image
 			className="w-100 h-100"
 			alt="Background"
-			src="/assets/backgrounds/0.jpg"
+			src="/assets/backgrounds/2.jpg"
 		/>
 		<div className="container cover__container h-100">
 			<div
 				className="w-100 h-100 f-c-st-st"
 				style={{
-					background: "url(/assets/cover/1.jpg) center center no-repeat",
+					background: "url(/assets/cover/3.jpg) center center no-repeat",
 					backgroundSize: "cover"
 				}}
 			>
