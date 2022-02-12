@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { v4 as uuidv4 } from "uuid";
 import JourneyItem from "./JourneyItem";
 import JourneyMore from "./JourneyMore";
@@ -84,9 +84,9 @@ const journeyList = [
 
 const Journey = () => {
 	const [allVisible, setAllVisible] = useState(false);
-	// const toDisplay = allVisible ? journeyList : journeyList.filter((journey, key) => key < 3);
 
 	const mappedJourney = journeyList.map((journey, key) => (
+		<Fragment key={ key }>
 		<JourneyItem
 			className={ allVisible ? "" : (key >= 3 ? "journey-item--invisible" : "") }
 			start={ key === 0 }
@@ -94,6 +94,7 @@ const Journey = () => {
 			reversed={ key % 2 === 0 }
 			journey={ journey } key={ uuidv4() }
 		/>
+		</Fragment>
 	));
 
 	return (
