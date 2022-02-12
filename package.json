@@ -23,7 +23,7 @@
 		"format": "prettier --write .",
 		"check": "eslint --fix .",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -b main -d build"
+		"deploy": "gh-pages -b gh-pages -d build"
 	},
 	"devDependencies": {
 		"eslint": "^7.11.0",
