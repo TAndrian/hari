@@ -25,7 +25,7 @@ const technologies = [
 ];
 
 const ProjectFilter = () => {
-	const { filter, toggle, canReset, reset } = useFilter(filterList, technologies);
+	const { filter, toggle, filtersActive, reset } = useFilter(filterList, technologies);
 
 	const mappedFilters = filterList.map(f => (
 		<div
@@ -66,7 +66,7 @@ const ProjectFilter = () => {
 			<div className="w-100 f-c-st-st">
 				<div className="w-100 f-r-be-ce">
 					<h3 className="theme pd-20"><Icon icon={ ["fas", "list"] } /> Filter list</h3>
-					{canReset && (
+					{filtersActive && (
 						<button
 							className=" project-filter__reset pd-10 pd-l-20 pd-r-20 br-5 white bg-theme p tr-200 mg-r-20"
 							onClick={ reset }

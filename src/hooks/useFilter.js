@@ -34,10 +34,11 @@ const useFilter = (filters, technologies) => {
 	// Init filters to false
 	useEffect(() => reset(), []);
 
-	let canReset = false;
+	// Checks if at least one filter is active
+	let filtersActive = false;
 	for(let key in filter) {
 		if(filter[key]) {
-			canReset = true;
+			filtersActive = true;
 			break;
 		}
 	}
@@ -45,7 +46,7 @@ const useFilter = (filters, technologies) => {
 	return {
 		filter,
 		toggle,
-		canReset,
+		filtersActive,
 		reset,
 	};
 };
