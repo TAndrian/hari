@@ -10,17 +10,14 @@
 		transition: all 0.6s ease-in-out;
 		box-shadow: 3px 3px 6px black;
 		transform-style: preserve-3d;
-		animation: 5s animFlip ease-out infinite;
+		animation: 5s animFlip linear infinite;
 		animation-delay: 2.3s;
 		@keyframes animFlip {
-			0% {
+			from {
 				transform: rotate3d(0, 1, 0, 0deg);
 			}
-			50% {
-				transform: rotate3d(0, 1, 0, 175deg);
-			}
-			100% {
-				transform: rotate3d(0, 1, 0, 0deg);
+			to {
+				transform: rotate3d(0, 1, 0, 360deg);
 			}
 		}
 	}
