@@ -1,0 +1,103 @@
+.hoverfold {
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.hoverfold .hoverfold__slice {
+	width: 60px;
+	height: 100%;
+	z-index: 2;
+	transform-style: preserve-3d;
+	transform-origin: left center;
+	transition: transform 150ms ease-in-out;
+}
+
+.hoverfold div.hoverfold__back {
+	overflow: hidden;
+	width: 50%;
+	height: 100%;
+	// text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.hoverfold .s2, 
+.hoverfold .s3, 
+.hoverfold .s4, 
+.hoverfold .s5 {
+	transform: translate3d(60px,0,0);
+}
+
+.hoverfold .s1 {
+	background-position: 0px 0px;
+}
+
+.hoverfold .s2 {
+	background-position: -60px 0px;
+}
+
+.hoverfold .s3 {
+	background-position: -120px 0px;
+}
+
+.hoverfold .s4 {
+	background-position: -180px 0px;
+}
+
+.hoverfold .s5 {
+	background-position: -240px 0px;
+}
+
+.hoverfold img {
+	position: absolute;
+	z-index: 0;
+	transition: left 0.3s ease-in-out;
+}
+
+.hoverfold {
+	perspective: 800px;
+}
+
+.hoverfold:hover .s1 {
+	transition-delay: 200ms;
+	transform: rotate3d(0,1,0,-3deg);
+}
+
+.hoverfold:hover .s2 {
+	transition-delay: 150ms;
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-10deg);
+}
+
+.hoverfold:hover .s3 {
+	transition-delay: 100ms;
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-16deg);
+}
+
+.hoverfold:hover .s4 {
+	transition-delay: 50ms;
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+}
+
+.hoverfold:hover .s5 {
+	transform: translate3d(60px,0,0) rotate3d(0,1,0,-42deg);
+}
+
+.hoverfold div.hoverfold__back {
+	background: black;
+	background: linear-gradient(to right, black, #666666);
+}
+
+.hoverfold {
+	&__link {
+		&:hover {
+			color: $color-theme;
+		}
+		&:active {
+			color: lighten($color-theme, 20%);
+		}
+	}
+}
