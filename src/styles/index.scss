@@ -43,6 +43,10 @@ blockquote {
     @include screen-x(1400px) {
         width: 90%;
     }
+
+    @include screen-x(900px) {
+        width: calc(100% - 20px);
+    }
 }
 
 @import "./Navbar.scss";

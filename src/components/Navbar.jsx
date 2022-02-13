@@ -21,7 +21,7 @@ const linkList = [
 const mappedLinks = linkList.map((link) => (
 	<li key={ uuidv4() }>
 		<a
-			className="navbar__link fs-110 b pd-10 pd-l-20 pd-r-20 br-5 tr-200"
+			className="link fs-110 b pd-10 pd-l-20 pd-r-20 br-5 tr-200"
 			href={ link.anchor }
 			title={ link.title }
 		>
@@ -67,28 +67,34 @@ const Navbar = () => {
 		<nav className="navbar w-100 bg-theme2 f-r-ce-ce">
 			<div className="container">
 				<div className="w-100 f-r-be-ce">
-					<div className="f-r-st-st">
+					<div className="f-r-st-ce">
 						<Image
 							className="logo mg-r-20 br-50 o-h n-s"
 							style={{ background: "rgb(20, 20, 20)" }}
 							alt="Logo"
-							width={ 60 }
-							height={ 60 }
 							src="/assets/heart.png"
 						/>
-						<div className="title">
-							<h1 className="fs-250 n-s p-n">
-								{ mappedChars }
-							</h1>
-							<h2 className="title-shadow fs-250 n-s p-n">
-								{ title }
-							</h2>
+						<div className="f-r-st-st">
+							<div className="title">
+								<h1 className="fs-250 n-s p-n">
+									{ mappedChars }
+								</h1>
+								<h2 className="title-shadow fs-250 n-s p-n">
+									{ title }
+								</h2>
+							</div>
+							<div className={ `${cube} w-10px h-10px` }></div>
 						</div>
-						<div className={ `${cube} w-10px h-10px` }></div>
 					</div>
-					<ul className="f-r-st-ce">
+					<ul className="navbar__links f-r-st-ce">
 						{ mappedLinks }
 					</ul>
+					<div
+						className="navbar__trigger w-50px h-50px br-50 white p n-s tr-200"
+						title="Open menu."
+					>
+						<Icon icon={ ["fas", "bars"] } />
+					</div>
 				</div>
 			</div>
 		</nav>

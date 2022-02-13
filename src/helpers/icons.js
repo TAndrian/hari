@@ -27,7 +27,8 @@ import {
 	faList,
 	faShare,
 	faTrash,
-	faExclamationCircle
+	faExclamationCircle,
+	faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -61,5 +62,6 @@ library.add(
 	faList,
 	faShare,
 	faTrash,
-	faExclamationCircle
+	faExclamationCircle,
+	faBars
 );

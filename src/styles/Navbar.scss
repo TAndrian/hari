@@ -7,6 +7,8 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 
 	.logo {
+		width: 50px;
+		height: 50px;
 		transition: all 0.6s ease-in-out;
 		box-shadow: 3px 3px 6px black;
 		transform-style: preserve-3d;
@@ -19,6 +21,11 @@
 			to {
 				transform: rotate3d(0, 1, 0, 360deg);
 			}
+		}
+		@include screen-x(500px) {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
 		}
 	}
 
@@ -55,15 +62,46 @@
 			z-index: -1;
 			color: rgb(20, 20, 20);
 		}
+		h1,
+		h2 {
+			@include screen-x(500px) {
+				font-size: 2em;
+			}
+		}
 	}
 
-	&__link {
-		display: block;
-		color: rgb(130, 130, 130);
-		&:hover {
-			color: white;
-			background: rgb(60, 60, 60);
-			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+	&__links {
+		@include screen-x(1100px) {
+			display: none;
+		}
+		.link {
+			display: block;
+			color: rgb(130, 130, 130);
+			&:hover {
+				color: white;
+				background: rgb(60, 60, 60);
+				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+
+	&__trigger {
+		display: none;
+		@include screen-x(1100px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 3px white solid;
+			font-size: 1.5em;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+			&:hover {
+				background: $color-theme;
+				border: 3px $color-theme solid;
+				font-size: 2em;
+			}
+			&:active {
+				font-size: 1em;
+			}
 		}
 	}
 }
