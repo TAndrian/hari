@@ -23,7 +23,10 @@ import {
 	faDownload,
 	faCoffee,
 	faUser,
-	faLink
+	faLink,
+	faList,
+	faShare,
+	faTrash
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -53,5 +56,8 @@ library.add(
 	faDownload,
 	faCoffee,
 	faUser,
-	faLink
+	faLink,
+	faList,
+	faShare,
+	faTrash
 );
