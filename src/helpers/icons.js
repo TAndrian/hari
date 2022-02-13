@@ -21,7 +21,9 @@ import {
 	faPhone,
 	faGlobe,
 	faDownload,
-	faCoffee
+	faCoffee,
+	faUser,
+	faLink
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -49,5 +51,7 @@ library.add(
 	faPhone,
 	faGlobe,
 	faDownload,
-	faCoffee
+	faCoffee,
+	faUser,
+	faLink
 );
