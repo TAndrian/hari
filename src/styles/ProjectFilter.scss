@@ -1,0 +1,24 @@
+.project-filter {
+	margin-bottom: 20px;
+
+	&__list {
+		flex-wrap: wrap;
+	}
+
+	&__separator {
+		width: calc(100% - 40px);
+		height: 1px;
+		background: rgb(200, 200, 200);
+		margin: auto;
+	}
+
+	&__reset {
+		border: none;
+		&:hover {
+			background: lighten($color-theme, 20%);
+		}
+		&:active {
+			background: darken($color-theme, 20%);
+		}
+	}
+}
