@@ -8,11 +8,14 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 const Hoverfold = () => (
 	<div className="hoverfold">
 		<div className="hoverfold__back f-c-en-ce">
-			<a className="hoverfold__link tr-200 white fs-300 mg-r-10" href="#0" title="Voir le repository">
+			<a className="hoverfold__link tr-200 white fs-250 mg-r-10" href="#0" title="Go to respository">
 				<Icon icon={ ["fab", "github"] } />
 			</a>
-			<a className="hoverfold__link tr-200 white fs-300 mg-r-10" href="#0" title="Visiter">
+			<a className="hoverfold__link tr-200 white fs-250 mg-r-10" href="#0" title="View">
 				<Icon icon={ ["fas", "link"] } />
+			</a>
+			<a className="hoverfold__link tr-200 white fs-250 mg-r-10" href="#0" title="Share link">
+				<Icon icon={ ["fas", "share"] } />
 			</a>
 		</div>
 		<div className="hoverfold__slice s1" style={{backgroundImage: "url(assets/test.jpg)", backgroundRepeat: "no-repeat"}}>
