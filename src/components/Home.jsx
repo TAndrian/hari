@@ -28,7 +28,7 @@ const Home = () => (
 			<Journey />
 		</div>
 		<Project />
-		{/*<GetInTouch />*/}
+		<GetInTouch />
 		<Copyright />
 	</Fragment>
 );

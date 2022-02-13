@@ -56,4 +56,14 @@
 			color: rgb(20, 20, 20);
 		}
 	}
+
+	&__link {
+		display: block;
+		color: rgb(130, 130, 130);
+		&:hover {
+			color: white;
+			background: rgb(60, 60, 60);
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+		}
+	}
 }
