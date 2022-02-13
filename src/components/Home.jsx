@@ -7,6 +7,7 @@ import Copyright from "./Copyright";
 import GetInTouch from "./GetInTouch";
 import ProjectCard from "./ProjectCard";
 import ProjectFilter from "./ProjectFilter";
+import ProjectEmpty from "./ProjectEmpty";
 
 /*
 	Home page
@@ -39,7 +40,8 @@ const Home = () => (
 		</Section>
 		<ProjectFilter />
 		<div className="container">
-			<ProjectCard />
+			<ProjectEmpty />
+			{/*<ProjectCard />*/}
 		</div>
 		{/*<GetInTouch />*/}
 		<Copyright />
