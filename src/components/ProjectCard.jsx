@@ -18,7 +18,7 @@ const tags = [
 ];
 
 const ProjectCard = () => (
-	<div className="project-card w-320px h-420px mg-b-100 bg-white f-c-st-st tr-200">
+	<div className="project-card w-320px h-420px mg-b-100 bg-white f-c-st-st tr-200 mg-t-20">
 		<div className="head w-100 f-r-ce-ce pd-t-10 pd-b-10">
 			<Hoverfold />
 			<p className="date pd-5 pd-l-10 pd-r-10 br-5 white"><Icon icon={ ["fas", "calendar-alt"] } /> 2016</p>

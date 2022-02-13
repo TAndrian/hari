@@ -11,10 +11,18 @@ import ProjectEmpty from "./ProjectEmpty";
 
 const ProjectList = () => {
 	return (
-		<div className="container">
-			<ProjectEmpty />
-			{/*<ProjectCard />*/}
-		</div>
+		<Fragment>
+			{/*<ProjectEmpty />*/}
+			<div className="project-list container">
+				<div className="list pd-b-20 f-r-be-st tx-l">
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+					<ProjectCard />
+				</div>
+			</div>
+		</Fragment>
 	);
 };
 
