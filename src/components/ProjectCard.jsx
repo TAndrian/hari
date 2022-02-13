@@ -1,10 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import Hoverfold from "./Hoverfold";
+import ProjectTags from "./ProjectTags";
 
 /*
 	Displays project item info
 */
+
+const tags = [
+	{ name: "React", color: "#149299"},
+	{ name: "NextJS", color: "black"},
+	{ name: "Typescript", color: "#283eab"},
+	{ name: "SASS", color: "#f33d5d"},
+	{ name: "NodeJS", color: "gold"},
+	{ name: "Express", color: "purple"},
+	{ name: "MongoDB", color: "green"}
+];
 
 const ProjectCard = () => (
 	<div className="project-card w-320px h-420px mg-b-100 bg-white f-c-st-st tr-200">
@@ -20,14 +31,7 @@ const ProjectCard = () => (
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna dui, blandit eget malesuada sit amet, dapibus bibendum.
 				</p>
 			</div>
-			<ul className="tag-list f-r-st-st pd-10 pd-t-0">
-				<li className="tag-list__item bg-purple white br-5 fs-90 mg-r-5 mg-t-5">React</li>
-				<li className="tag-list__item bg-lime white br-5 fs-90 mg-r-5 mg-t-5">NextJS</li>
-				<li className="tag-list__item bg-black white br-5 fs-90 mg-r-5 mg-t-5">Typescript</li>
-				<li className="tag-list__item bg-gold white br-5 fs-90 mg-r-5 mg-t-5">SASS</li>
-				<li className="tag-list__item bg-green white br-5 fs-90 mg-r-5 mg-t-5">NodeJS/Express</li>
-				<li className="tag-list__item bg-red white br-5 fs-90 mg-r-5 mg-t-5">MongoDB</li>
-			</ul>
+			<ProjectTags list={ tags } />
 		</div>
 	</div>
 );

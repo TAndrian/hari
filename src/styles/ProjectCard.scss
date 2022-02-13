@@ -24,11 +24,4 @@
 	.body {
 		flex-grow: 1;
 	}
-
-	.tag-list {
-		flex-wrap: wrap;
-		&__item {
-			padding: 3px 10px;
-		}
-	}
 }
