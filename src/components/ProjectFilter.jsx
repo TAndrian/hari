@@ -1,31 +1,21 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import useFilter from "../hooks/useFilter";
+import { useProject } from "../hooks/useProject";
 
 /*
 	Filters for project list
 */
 
-const filterList = [
-	{ name: "name", content: "Name" },
-	{ name: "date", content: "Date" },
-	{ name: "maximumTech", content: "Most technologies used" },
-	{ name: "minimumTech", content: "Least technologies used" }
-];
-
-const technologies = [
-	"React",
-	"NextJS",
-	"Typescript",
-	"SASS",
-	"NodeJS",
-	"Express",
-	"MongoDB",
-];
-
 const ProjectFilter = () => {
-	const { filter, toggle, filtersActive, reset } = useFilter(filterList, technologies);
+	const {
+		filter,
+		toggle,
+		filtersActive,
+		reset,
+		filterList,
+		technos
+	} = useProject();
 
 	const mappedFilters = filterList.map(f => (
 		<div
@@ -44,20 +34,20 @@ const ProjectFilter = () => {
 		</div>
 	));
 
-	const mappedTechnologies = technologies.map(techno => (
+	const mappedTechnologies = technos.map(techno => (
 		<div
 			className="project-filter__checkbox f-r-st-ce p mg-r-10 pd-t-20"
-			onClick={ () => toggle(techno) }
+			onClick={ () => toggle(techno.name) }
 			key={ uuidv4() }
 		>
 			<input
 				className="p-n n-s"
 				type="checkbox"
-				name={ techno }
-				checked={ filter[techno] }
+				name={ techno.name }
+				checked={ filter[techno.name] }
 				readOnly
 			/>
-			<label className="mg-r-10 n-s p-n" htmlFor="date">{ techno }</label>
+			<label className="mg-r-10 n-s p-n" htmlFor="date">{ techno.name }</label>
 		</div>
 	));
 

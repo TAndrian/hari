@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import useFilter from "../hooks/useFilter";
+import { useProject } from "../hooks/useProject";
 
 /*
 	Display this when the project list is empty
@@ -25,7 +25,7 @@ const technologies = [
 ];
 
 const ProjectEmpty = () => {
-	const { filtersActive } = useFilter(filterList, technologies);
+	const { filtersActive } = useProject();
 
 	return (
 		<div className="project-empty w-100 h-200px f-c-ce-ce mg-t-20 mg-b-20 fs-500 bg-white n-s p-n">
