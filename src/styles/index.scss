@@ -22,6 +22,11 @@
     background: $color-theme2;
 }
 
+
+.white {
+    color: white;
+}
+
 blockquote {
     margin: 0;
 }
@@ -63,3 +68,4 @@ blockquote {
 @import "./Hoverfold.scss";
 @import "./ProjectCard.scss";
 @import "./ProjectTags.scss";
+@import "./ProjectFilter.scss";
