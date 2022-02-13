@@ -25,6 +25,17 @@
 	z-index: 0;
 }
 
+.hoverfold div.hoverfold__back2 {
+	overflow: hidden;
+	width: 50%;
+	height: 100%;
+	// text-align: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
 .hoverfold .s2, 
 .hoverfold .s3, 
 .hoverfold .s4, 
