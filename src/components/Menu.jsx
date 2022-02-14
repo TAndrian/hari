@@ -28,7 +28,7 @@ const Menu = () => {
 				<ul className="menu__list bg-theme2 w-100 pd-t-10 pd-b-10 f-c-ce-st">
 					{ mappedLinks }
 				</ul>
-				<div className="menu__bottom n-s p-n">
+				<div className="menu__bottom n-s p-n tr-200">
 					<div className="balance w-100 h-100 f-r-ce-en">
 						<div className="circle w-120px h-120px br-r o-h bg-theme2"></div>
 					</div>
