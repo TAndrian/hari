@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 import Section from "./Section";
 
 /*
@@ -77,6 +78,13 @@ const mappedOfferList = offerList.map((offer, key) => {
 					<Icon icon={ ["fas", "shopping-cart"] } /> { key === 2 ? "Try" : "Take this" }
 				</button>
 			</p>
+			{ key === 1 && (
+				<Image
+					className="pricing__recommended"
+					alt="Recommended"
+					src="/assets/recommended.png"
+				/>
+			)}
 		</div>
 	);
 });
