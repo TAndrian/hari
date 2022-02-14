@@ -1,0 +1,35 @@
+.project-image {
+	position: relative;
+
+	&__links {
+		background: #cdcdcd;
+		.link {
+			color: rgb(80, 80, 80);
+			&:hover {
+				color: black;
+			}
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&:hover {
+		.project-image__bg {
+			left: -60px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		.text {
+			background: rgba(0, 0, 0, 0.6);
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+		}
+	}
+}

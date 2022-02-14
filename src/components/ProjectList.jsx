@@ -14,7 +14,7 @@ const ProjectList = () => {
 		<Fragment>
 			{/*<ProjectEmpty />*/}
 			<div className="project-list container">
-				<div className="list pd-b-20 f-r-be-st tx-l">
+				<div className="list w-100 pd-t-20 pd-b-20">
 					<ProjectCard />
 					<ProjectCard />
 					<ProjectCard />
