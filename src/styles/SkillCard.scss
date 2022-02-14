@@ -1,0 +1,56 @@
+.skill-card {
+	position: relative;
+	width: calc((100% / 4) - 20px);
+	height: 200px;
+	margin-right: 20px;
+	perspective: 1400px;
+
+	@include screen-x(1700px) {
+		width: calc((100% / 3) - 20px);
+	}
+
+	@include screen-x(1000px) {
+		width: calc((100% / 2) - 20px);
+		height: 250px;
+	}
+
+	@include screen-x(700px) {
+		width: calc(100% - 20px);
+		height: 270px;
+	}
+
+	.fold {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		transform-style: preserve-3d;
+		transform-origin: left center;
+		pointer-events: none;
+		opacity: 1;
+		transition-property: transform, opacity;
+		transition-delay: 0s, 0.2s;
+		transition-timing-function: ease-out, ease-out;
+		transition-duration: 0.3s, 0.1s;
+		pointer-events: none;
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 1px black;
+		.fold {
+			transform: rotate3d(0, 1, 0, -90deg);
+			opacity: 0;
+			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	.back {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+
+	.content {
+		width: calc(100% - 20px);
+		background: rgba(0, 0, 0, 0.6);
+	}
+}
