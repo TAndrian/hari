@@ -20,7 +20,7 @@ const SkillCard = ({ skill }) => {
 				/>
 			</div>
 			<div className="back w-100 h-100 f-c-ce-ce p-n n-s">
-				<div className="content br-10">
+				<div className="content br-5">
 					<h4 className="white pd-10 fs-120">{ skill.name }</h4>
 					<p className="tx-j whitesmoke pd-10 pd-t-0">{ skill.description }</p>
 				</div>
