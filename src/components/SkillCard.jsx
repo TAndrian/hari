@@ -8,7 +8,7 @@ const SkillCard = ({ skill }) => {
 	};
 
 	return (
-		<article className="skill-card bg-white mg-b-20" style={ style }>
+		<article className="skill-card bg-white" style={ style }>
 			<div
 				className="fold w-100 h-100 f-c-ce-ce"
 				style={ style }

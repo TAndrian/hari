@@ -74,7 +74,7 @@ const Skills = () => (
 			</Fragment>
 		</Section>
 		<div className="container">
-			<div className="skills w-100 f-r-st-st">
+			<div className="skills w-100">
 				{ mappedSkills }
 			</div>
 		</div>

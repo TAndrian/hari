@@ -1,22 +1,10 @@
 .skill-card {
 	position: relative;
-	width: calc((100% / 4) - 20px);
 	height: 200px;
-	margin-right: 20px;
 	perspective: 1400px;
-
-	@include screen-x(1700px) {
-		width: calc((100% / 3) - 20px);
-	}
-
-	@include screen-x(1000px) {
-		width: calc((100% / 2) - 20px);
+	
+	@include screen-x(500px) {
 		height: 250px;
-	}
-
-	@include screen-x(700px) {
-		width: calc(100% - 20px);
-		height: 270px;
 	}
 
 	.fold {
