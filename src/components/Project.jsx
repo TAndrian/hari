@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ProjectProvider } from "../hooks/useProject";
+import { ProjectProvider } from "../context";
 import Section from "./Section";
 import ProjectFilter from "./ProjectFilter";
 import ProjectList from "./ProjectList";

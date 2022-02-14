@@ -16,7 +16,7 @@ import Pricing from "./Pricing";
 const Home = () => (
 	<Fragment>
 		<NavigationWrapper />
-		{/*<Cover />
+		<Cover />
 		<Section
 			id="journey"
 			title="Let me tell a story"
@@ -33,7 +33,7 @@ const Home = () => (
 		<Project />
 		<Pricing />
 		<GetInTouch />
-		<Copyright />*/}
+		<Copyright />
 	</Fragment>
 );
 

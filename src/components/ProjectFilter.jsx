@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import { useProject } from "../hooks/useProject";
+import { useProject } from "../hooks";
 
 /*
 	Filters for project list

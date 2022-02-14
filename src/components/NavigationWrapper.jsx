@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Menu from "./Menu";
-import { MenuProvider } from "../hooks/useMenu";
+import { MenuProvider } from "../context";
 
 /*
 	Wrap menu an navbar inside context

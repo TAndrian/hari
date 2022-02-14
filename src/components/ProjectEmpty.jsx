@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import { useProject } from "../hooks/useProject";
+import { useProject } from "../hooks";
 
 /*
 	Display this when the project list is empty

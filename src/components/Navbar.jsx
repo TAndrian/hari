@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { LazyLoadImage as Image } from "react-lazy-load-image-component";
-import { useMenu } from "../hooks/useMenu";
+import { useMenu } from "../hooks";
 
 /*
 	Navigation bar
