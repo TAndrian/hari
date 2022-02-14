@@ -29,6 +29,8 @@
 		@include screen-x(1050px) {
 			width: calc(100% - 20px);
 			height: auto;
+			margin: 0;
+			margin-bottom: 20px;
 		}
 		.price {
 			font-size: 4em;

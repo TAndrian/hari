@@ -52,7 +52,7 @@ const ProjectFilter = () => {
 	));
 
 	return (
-		<div className="project-filter container bg-white b-b">
+		<div className="project-filter container bg-white b-b o-h">
 			<div className="w-100 f-c-st-st">
 				<div className="w-100 f-r-be-ce">
 					<h3 className="theme pd-20"><Icon icon={ ["fas", "list"] } /> Filter list</h3>
