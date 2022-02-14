@@ -31,9 +31,9 @@ const offerList = [
 		]
 	},
 	{
-		name: "Maquette",
+		name: "Website model",
 		price: "0 €",
-		description: (<span>A maquette for your future website for <span className="b">FREE</span> ! So that you can see in advance how it&apos;ll look like.</span>),
+		description: (<span>A model for your future website for <span className="b">FREE</span> ! So that you can see in advance how it&apos;ll look like.</span>),
 		checks: [
 			"Completely FREE",
 			"Finished within a week",
@@ -64,12 +64,14 @@ const mappedOfferList = offerList.map((offer, key) => {
 				{ mappedChecks }
 			</ul>
 			<div className="separator mg-l-20"></div>
-			<p className="green tx-c pd-t-20 b u n-s p-n">
-				{ key === 2 ? "It's FREE, why not try ?" : "Starting from:" }
-			</p>
-			<p className="price tx-c green fs-200 pd-b-20 b n-s p-n">
-				{ offer.price }
-			</p>
+			<div className="pricing-info">
+				<p className="text green tx-c pd-t-20 b u n-s p-n">
+					{ key === 2 ? "It's FREE, why not try ?" : "Starting from:" }
+				</p>
+				<p className="price tx-c green fs-200 pd-b-20 b n-s p-n">
+					{ offer.price }
+				</p>
+			</div>
 			<p className="tx-c">
 				<button className="shop bg-green pd-10 pd-l-0 pd-r-0 white br-5 p tr-200 mg-b-20 o-h">
 					<Icon icon={ ["fas", "shopping-cart"] } /> { key === 2 ? "Try" : "Take this" }
