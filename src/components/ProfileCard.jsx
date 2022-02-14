@@ -2,8 +2,8 @@ import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 
-const ProfileCard = () => (
-	<article className="card-profile br-10 mg-l-20 o-h">
+const ProfileCard = ({ dark }) => (
+	<article className={ `card-profile ${dark ? "card-profile--dark" : ""} br-10 mg-l-20 o-h` }>
 		<Image
 			className="card-profile__figure o-h br-5 f-r-ce-ce n-s"
 			style={{

@@ -5,6 +5,10 @@
 	background: rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 
+	&--dark {
+		background: transparent;
+	}
+
 	@include screen-x(900px) {
 		margin: auto;
 	}

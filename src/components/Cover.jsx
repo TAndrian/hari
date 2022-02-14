@@ -13,12 +13,13 @@ const Cover = () => {
 	const [bgCover, setBgCover] = useState(4);
 	const [bg, setBg] = useState(3);
 
+	// Gets current hour as integer
+	const getCurrentHour = () => {
+		const date = new Date().toLocaleString("fr-FR", { hour12: false });
+		return parseInt(date.split(" ")[1].split(":")[0]);
+	};
+
 	useEffect(() => {
-		// Gets current hour as integer
-		const getCurrentHour = () => {
-			const date = new Date().toLocaleString("fr-FR", { hour12: false });
-			return parseInt(date.split(" ")[1].split(":")[0]);
-		};
 		// Changes cover background
 		const changeBgCover = () => {
 			const now = getCurrentHour();
@@ -62,7 +63,7 @@ const Cover = () => {
 			<div className="container cover__container h-100">
 				<div className={ `cover__bg--${bgCover} w-100 h-100 f-c-st-st` }>
 					<div className="w-100 h-80 o-h f-r-be-ce">
-						<ProfileCard />
+						<ProfileCard dark={ getCurrentHour() >= 19 } />
 						<CoverRight />
 					</div>
 					<CoverBottom />
