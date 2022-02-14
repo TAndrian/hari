@@ -30,7 +30,7 @@ const ProfileCard = ({ dark }) => (
 			<a
 				className="card-profile__link pd-5 br-5 mg-r-20 bg-theme tr-200 f-r-ce-ce fs-80"
 				title="Site de Publicis Sapient France"
-				href="#0"
+				href="https://publicissapient.fr"
 			>
 				Publicis Sapient France
 			</a>

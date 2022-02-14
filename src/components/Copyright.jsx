@@ -7,7 +7,7 @@ const Copyright = () => {
 				<a className="link theme tr-200" href="https://linkedin.com/in/harijaona-rajaonson" title="View my LinkedIn profile.">H. Rajaonson</a>, All rights reserved.
 				</p>
 			<p className="right tx-l pd-l-10 white b">
-				Copyright © 2017 - 2022
+				Copyright © 2017 - { new Date().getFullYear() }
 			</p>
 		</footer>
 	);

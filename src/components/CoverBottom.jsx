@@ -10,22 +10,22 @@ import Anime from "animejs";
 const socialList = [
 	{
 		icon: ["fab", "github"],
-		link: "#0",
+		link: "https://github.com/Manjaka13",
 		title: "Visit my github profile !"
 	},
 	{
 		icon: ["fab", "linkedin"],
-		link: "#0",
+		link: "http://linkedin.com/in/harijaona-rajaonson",
 		title: "Add me on LinkedIn !"
 	},
 	{
-		icon: ["fab", "skype"],
-		link: "#0",
-		title: "Join me on Skype !"
+		icon: ["fab", "facebook"],
+		link: "https://facebook.com/Manjaka1",
+		title: "Add me on Facebook"
 	},
 	{
 		icon: ["fas", "envelope"],
-		link: "#contacts",
+		link: "#get-in-touch",
 		title: "Send me a message !"
 	}
 ];

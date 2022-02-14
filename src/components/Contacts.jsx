@@ -35,9 +35,6 @@ const Contacts = () => {
 			<ul className="pd-20 pd-b-0">
 				{ mappedContacts }
 			</ul>
-			<button className="download pd-10 pd-l-20 pd-b-10 br-5 bg-theme tr-200 mg-l-20">
-				<Icon icon={ ["fas", "download"] } /> Download resume
-			</button>
 		</div>
 	);
 };

@@ -4,7 +4,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import {
 	faGithub,
 	faLinkedin,
-	faSkype
+	faFacebook
 } from "@fortawesome/free-brands-svg-icons";
 import {
 	faEnvelope,
@@ -44,7 +44,7 @@ config.autoAddCss = false;
 library.add(
 	faGithub,
 	faLinkedin,
-	faSkype,
+	faFacebook,
 	faEnvelope,
 	faLaptop,
 	faMapMarkerAlt,
