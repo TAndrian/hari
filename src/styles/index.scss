@@ -27,6 +27,10 @@
     color: white;
 }
 
+.bg-white {
+    background: white;
+}
+
 blockquote {
     margin: 0;
 }
@@ -77,3 +81,4 @@ blockquote {
 @import "./ProjectList.scss";
 @import "./Skills.scss";
 @import "./SkillCard.scss";
+@import "./Pricing.scss";

@@ -7,6 +7,7 @@ import Copyright from "./Copyright";
 import GetInTouch from "./GetInTouch";
 import Project from "./Project";
 import Skills from "./Skills";
+import Pricing from "./Pricing";
 
 /*
 	Home page
@@ -30,6 +31,7 @@ const Home = () => (
 		</div>
 		<Skills />
 		<Project />
+		<Pricing />
 		<GetInTouch />
 		<Copyright />
 	</Fragment>
