@@ -14,7 +14,7 @@ const offerList = [
 		description: "This offer is for full multiple page websites, on-demand functionnality and heavy referenced content.",
 		checks: [
 			"Multiple page website",
-			"Good SEO and mobile friendly",
+			"SEO and mobile friendly",
 			"Full functionnality"
 		]
 	},
