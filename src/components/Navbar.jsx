@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { LazyLoadImage as Image } from "react-lazy-load-image-component";
+import { useMenu } from "../hooks/useMenu";
 
 /*
 	Navigation bar
@@ -10,27 +11,8 @@ import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 const title = "Harijaona";
 const splittedTittle = title.split("");
 
-const linkList = [
-	{ icon: ["fas", "pencil-alt"], content: "My journey", anchor: "#0", title: "Read my story." },
-	{ icon: ["fas", "wrench"], content: "Skillset", anchor: "#0", title: "How skilled I am ?" },
-	{ icon: ["fas", "laptop"], content: "Projects", anchor: "#0", title: "List of my projects." },
-	{ icon: ["fas", "id-card"], content: "Pricing", anchor: "#0", title: "View my prices" },
-	{ icon: ["fas", "envelope"], content: "Contacts", anchor: "#0", title: "How to reach me." }
-];
-
-const mappedLinks = linkList.map((link) => (
-	<li key={ uuidv4() }>
-		<a
-			className="link fs-110 b pd-10 pd-l-20 pd-r-20 br-5 tr-200"
-			href={ link.anchor }
-			title={ link.title }
-		>
-			<Icon icon={ link.icon } /> { link.content }
-		</a>
-	</li>
-));
-
 const Navbar = () => {
+	const { toggle, links } = useMenu();
 	const [currentChar, setCurrentChar] = useState(-1);
 	const [cube, setCube] = useState("cube");
 
@@ -63,6 +45,18 @@ const Navbar = () => {
 		</span>
 	));
 
+	const mappedLinks = links.map((link) => (
+		<li key={ uuidv4() }>
+			<a
+				className="link fs-110 b pd-10 pd-l-20 pd-r-20 br-5 tr-200"
+				href={ link.anchor }
+				title={ link.title }
+			>
+				<Icon icon={ link.icon } /> { link.content }
+			</a>
+		</li>
+	));
+
 	return (
 		<nav className="navbar w-100 bg-theme2 f-r-ce-ce">
 			<div className="container">
@@ -92,6 +86,7 @@ const Navbar = () => {
 					<div
 						className="navbar__trigger w-50px h-50px br-50 white p n-s tr-200"
 						title="Open menu."
+						onClick={ toggle }
 					>
 						<Icon icon={ ["fas", "bars"] } />
 					</div>

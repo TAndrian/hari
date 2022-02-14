@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
+import NavigationWrapper from "./NavigationWrapper";
 import Cover from "./Cover";
 import Section from "./Section";
 import Journey from "./Journey";
@@ -15,8 +15,8 @@ import Pricing from "./Pricing";
 
 const Home = () => (
 	<Fragment>
-		<Navbar />
-		<Cover />
+		<NavigationWrapper />
+		{/*<Cover />
 		<Section
 			id="journey"
 			title="Let me tell a story"
@@ -33,7 +33,7 @@ const Home = () => (
 		<Project />
 		<Pricing />
 		<GetInTouch />
-		<Copyright />
+		<Copyright />*/}
 	</Fragment>
 );
 
