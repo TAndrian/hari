@@ -1,5 +1,9 @@
 .get-in-touch {
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	padding-top: 76px;
+
+	&__box {
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	}
 
 	.box {
 		// width: calc(100% / 3);

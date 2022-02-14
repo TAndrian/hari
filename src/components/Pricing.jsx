@@ -54,6 +54,7 @@ const mappedOfferList = offerList.map((offer, key) => {
 	));
 	return (
 		<div
+			id="pricing"
 			className={ `pricing__item br-10 bg-white tr-200 ${key === 1 ? "big" : "little"}` }
 			key={ uuidv4() }
 		>

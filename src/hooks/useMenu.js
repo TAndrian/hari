@@ -16,11 +16,11 @@ const MenuContext = createContext({});
 const MenuProvider = ({ children }) => {
 	const [opened, setOpened] = useState(false);
 	const [links, setLinks] = useState([
-		{ icon: ["fas", "pencil-alt"], content: "My journey", anchor: "#0", title: "Read my story." },
-		{ icon: ["fas", "wrench"], content: "Skillset", anchor: "#0", title: "How skilled I am ?" },
-		{ icon: ["fas", "laptop"], content: "Projects", anchor: "#0", title: "List of my projects." },
-		{ icon: ["fas", "id-card"], content: "Pricing", anchor: "#0", title: "View my prices" },
-		{ icon: ["fas", "envelope"], content: "Contacts", anchor: "#0", title: "How to reach me." }
+		{ icon: ["fas", "pencil-alt"], content: "My journey", anchor: "#journey", title: "Read my story." },
+		{ icon: ["fas", "wrench"], content: "Skills", anchor: "#skills", title: "How skilled I am ?" },
+		{ icon: ["fas", "laptop"], content: "Projects", anchor: "#projects", title: "List of my projects." },
+		{ icon: ["fas", "id-card"], content: "Pricing", anchor: "#pricing", title: "View my prices" },
+		{ icon: ["fas", "envelope"], content: "Contacts", anchor: "#get-in-touch", title: "How to reach me." }
 	]);
 
 	// Toggles filter on of off
